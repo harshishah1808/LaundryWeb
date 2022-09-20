@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+.navbar-custom {
+    background-color: #c09f80;
+  }
+  
+  .navbar .container-fluid .collapse .btn {
+    border-color: #76323f;
+  }
+  
+  .navbar .container-fluid .collapse .btn:hover {
+    background-color: #76323f;
+    color: white;
+  }
+  
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Height of the footer */
+    background: #c09f80;
+  }
+  
+  .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #76323f;
+    color: white;
+  }
+  
+  .dropdown{
+    padding-left: 50px;
+  }
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height:100vh;
+    background: #d7cec7;
+    padding-bottom: 70px;
+}
+
+.container form{
+    padding: 20px;
+    width: 1000px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex:1 1 250px;
+}
+
+.img{
+    width: 250px;
+    height: 60px;
+}
+
+.img1{
+    width: 200px;
+    height: 150px;
+}
+
+.container .col .form-check .form-check-input{
+    margin-top: 20px;
+}
+
+.container .col .form-check .form-check-label{
+    margin-top: 20px;
+}
+
+.container form .row .col .inputBox{
+    margin: 15px 0;
+}
+
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border:1px solid #565656;
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+
+.container form .submit-btn{
+    width:100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #76323f;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer
+}
+
+.container form .submit-btn:hover{
+    background: #8b1428;
+
+}
+
+
+/* body {
+    background: rgb(213, 217, 233);
+    min-height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    font-family: Muli;
+    font-size: 14px
+} */
+
+.container .row .col .card {
+    margin: auto;
+    width: 320px;
+    max-width: 600px;
+    border-radius: 20px
+}
+
+@media(max-width:767px) {
+    .container .row .col .card {
+        width: 80%
+    }
+}
+
+@media(height:1366px) {
+    .container .row .col .container .row .col .card {
+        width: 75%
+    }
+}
+
+#orderno {
+    padding: 1vh 2vh 0;
+    font-size: smaller
+}
+
+.container .row .col .card .title {
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 12%;
+}
+
+.container .row .col .main {
+    padding: 0 2rem
+}
+
+.container .row .col .main img {
+    border-radius: 7px
+}
+
+.container .row .col .main p {
+    margin-bottom: 0;
+    font-size: 0.75rem
+}
+
+#sub-title p {
+    margin: 1vh 0 2vh 0;
+    font-size: 1rem
+}
+
+.container .row .col .main .row-main {
+    padding: 1.5vh 0;
+    align-items: center
+}
+
+hr {
+    margin: 1rem -1vh;
+    border-top: 1px solid rgb(214, 214, 214)
+}
+
+.container .row .col .main .total {
+    font-size: 1rem
+}
+
+@media(height: 1366px) {
+    .container .row .col .main p {
+        margin-bottom: 0;
+        font-size: 1.2rem
+    }
+
+    .container .row .col .main .total {
+        font-size: 1.5rem
+    }
+}
+

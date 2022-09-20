@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/payment.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LaundryWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        User Profile
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Track Order</a></li>
+                        <li><a class="dropdown-item" href="#">Order History</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form action="track_order.html">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="title mx-auto"> Thank you for your order! </div>
+                        <div class="main"> <span id="sub-title">
+                                <p><b>order #546924</b></p>
+                                <p><b>Order Summary</b></p>
+                            </span>
+                            <div class="row row-main">
+                                <div class="col-3"> <img class="img-fluid" src="images/laundry-icon-27.jpg"> </div>
+                                <div class="col-6">
+                                    <div class="row d-flex">
+                                        <p><b>Laundry- Wash & Iron</b></p>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <p class="text-muted">3-shirts</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end">
+                                    <p><b>$599</b></p>
+                                </div>
+                            </div>
+                            <div class="row row-main">
+                                <div class="col-3"> <img class="img-fluid" src="images/dryclean.png"> </div>
+                                <div class="col-6">
+                                    <div class="row d-flex">
+                                        <p><b>Dry Cleaning</b></p>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <p class="text-muted">1-Blanket</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end">
+                                    <p><b>$199</b></p>
+                                </div>
+                            </div>
+                            <div class="row row-main">
+                                <div class="col-3 "> <img class="img-fluid" src="images/steam-iron.png">
+                                </div>
+                                <div class="col-6">
+                                    <div class="row d-flex">
+                                        <p><b>Steam Press</b></p>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <p class="text-muted">1-pair of formal</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end">
+                                    <p><b>$49.95</b></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="total">
+                                <div class="col"> <b> Total: </b> <b>$847.95</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">BILLING ADDRESS</h3>
+                    <div class="inputBox">
+                        <span>Full Name: </span>
+                        <input type="text" placeholder="John Deo">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email: </span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address: </span>
+                        <input type="text" placeholder="house no-street-locality">
+                    </div>
+                    <div class="inputBox">
+                        <span>City: </span>
+                        <input type="text" placeholder="Pune">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State: </span>
+                            <input type="text" placeholder="Maharashtra">
+                        </div>
+                        <div class="inputBox">
+                            <span>Pin Code: </span>
+                            <input type="text" placeholder="123456">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">PAYMENT</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment">
+                        <label class="form-check-label">
+                            Credit/Debit Card
+                        </label>
+                        <div class="inputBox">
+                            <span>Cards accepted: </span>
+                            <img class="img" src="images/card_img.png" alt="">
+                            <br>
+                            <a href="/online_payment.html">Pay Now</a>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment">
+                        <label class="form-check-label">
+                            Cash On Delivery(COD)
+                        </label>
+                        <img class="img1"
+                            src="https://www.kindpng.com/picc/m/394-3943480_cash-on-delivery-icon-hd-png-download.png"
+                            alt="Cash On Delivery Icon, HD Png Download@kindpng.com">
+                    </div>
+                </div>
+                <input type="submit" value="proceed to checkout" class="submit-btn">
+        </form>
+    </div>
+    <footer class="text-center text-lg-start" id="footer">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="#">LaundryWeb.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+</html>
+</body>
+
+</html>

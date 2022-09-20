@@ -1,0 +1,46 @@
+.navbar-custom {
+  background-color: #c09f80;
+}
+
+.navbar .container-fluid .collapse .btn {
+  border-color: #76323f;
+}
+
+.navbar .container-fluid .collapse .btn:hover {
+  background-color: #76323f;
+  color: white;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /* Height of the footer */
+  background: #c09f80;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #76323f;
+  color: white;
+}
+
+.dropdown {
+  padding-left: 50px;
+}
+
+.container {
+  padding: 25px;
+  min-height: 100vh;
+  background: #d7cec7;
+  padding-bottom: 70px;
+}
+
+.container .title{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .title h5{
+  font-size: 30px;
+}
