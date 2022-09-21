@@ -1,0 +1,32 @@
+
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #76323f;
+  color: white;
+}
+
+.dropdown{
+  padding-left: 50px;
+}
+
+.mask {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+.navbar-custom {
+  background-color: #c09f80;
+}
+
+.navbar .container-fluid .collapse .btn {
+  border-color: #76323f;
+}
+
+.navbar .container-fluid .collapse .btn:hover {
+  background-color: #76323f;
+  color: white;
+}
+
